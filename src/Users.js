@@ -90,7 +90,7 @@ const Users = () => {
     return(
       <>
        <div className="user-header">
-        <div style={{ marginLeft:"40%", fontSize:'30px' , fontStyle:"bold"}}>User Managment System</div>
+        <div style={{ marginLeft:"40%", fontSize:'30px' , fontStyle:"bold"}}>User Management System</div>
         </div>
       <Box
         sx={{
