@@ -1,5 +1,6 @@
 import { Grid, Input, Typography, containerClasses, withTheme } from "@mui/material";
 import { useEffect, useState } from "react";
+import './App.css';
 
 const UserForm = ({addUser,updateUser,submitted,data,isEdit}) =>{
 
@@ -21,8 +22,10 @@ const UserForm = ({addUser,updateUser,submitted,data,isEdit}) =>{
     }
 
   },[data]); //me prop eka run wenna one data eka change wena welawedi
-
  return(
+<>
+ 
+  
 <Grid
       container
       spacing={2}   
@@ -110,6 +113,7 @@ const UserForm = ({addUser,updateUser,submitted,data,isEdit}) =>{
 
                 </button>
 </Grid>
+</>
  )
   
 }

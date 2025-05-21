@@ -20,7 +20,22 @@
   border-radius:10px;
   background-color:white;
   cursor: pointer;
-
 }
 
+.app-navbar{
+  height: 5px;
+  color: cadetblue;
+  width: 100%;
+}
+
+.user-header{
+  height : 50px;
+  background-color: cadetblue;
+  width: 100%;
+  margin-top: 0;
+  display: flex;
+  
+
+
+}
 

@@ -8,6 +8,7 @@ function App() {
   const navigate = useNavigate();
 
   return (
+    
     <div className="App">
       <header className="App-header">
         <h1>Welcome to the THARA vlog</h1>

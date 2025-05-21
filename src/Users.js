@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
    //[] meka userEffect hook eke 2nd parameter eka(dependancy array).meke mukuth neththn userEffect eka run wenne component eka load wena welawe witharai
 
 const Users = () => {
+
       const [users,setUsers] = useState([]); //users kiyla state variable ekk hadanawa eka aya use kranna one nisa.setUser kiynne function eka.
       const [submitted,setSubmitted] = useState(false); //submitted kiyna variable eke function eka setSubmitted. false danne mulin mkuth submit krla nathi nisa.
       const[selectedUser,setSelectedUser]= useState({});
@@ -87,6 +88,10 @@ const Users = () => {
       }
 
     return(
+      <>
+       <div className="user-header">
+        <div style={{ marginLeft:"40%", fontSize:'30px' , fontStyle:"bold"}}>User Managment System</div>
+        </div>
       <Box
         sx={{
           width: 'calc(100% - 100px)',
@@ -111,7 +116,7 @@ const Users = () => {
              deleteUser={data => window.confirm('Are you sure?') && deleteUser(data)}
              />
       </Box>
-      
+    </>  
     )
 }
 
